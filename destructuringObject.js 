@@ -1,0 +1,15 @@
+const pessoa ={
+  nome:'Ana', 
+  idade: 5 ,
+  endereco:{logradouro:'Rua ABC', 
+            numero: 1000}}
+/*
+cont {nome, idade} = pessoa //tirar atributos do objeto pessoa
+console.log(nome, idade) = pessoa 
+*/
+
+const {nome:n, idade:i} = pessoa
+console.log(n, i)
+
+const {endereco:{logradouro, numero}} = pessoa
+console.log(logradouro, numero)
